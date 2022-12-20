@@ -75,6 +75,7 @@
       <Generator>VsixManifestGenerator</Generator>
       <LastGenOutput>source.extension.cs</LastGenOutput>
     </None>
+    <Content Include="2022-12-20 202957.png" />
     <Content Include="208664199-9520438b-8f4f-447d-8b75-b06d9db1a644.png" />
     <Content Include="Resources\ChineseToEnglishCommand.png" />
     <Content Include="Resources\ChineseToPinYinCommand.png" />
