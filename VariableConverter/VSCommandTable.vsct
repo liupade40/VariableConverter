@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <Extern href="stdidcmd.h" />
+  <Extern href="vsshlids.h" />
+  <Include href="KnownImageIds.vsct" />
+  <Include href="VSGlobals.vsct" />
+
+  <Commands package="VariableConverter">
+	  <Menus>
+		  <Menu guid ="guidVariableConverterPackageCmdSet" id="CommandNewId" priority="0x3110" type="Menu">
+			  <Parent guid="guidVariableConverterPackageCmdSet" id="RightClickMenuNewGroup"/>
+			  <Strings>
+				  <ButtonText>变量转换</ButtonText>
+				  <CommandName>变量转换</CommandName>
+			  </Strings>
+		  </Menu>
+	  </Menus>
+    <Groups>
+      <Group guid="guidVariableConverterPackageCmdSet" id="RightClickMenuNewGroup" priority="0x0600">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_CODEWIN" />
+      </Group>
+		<Group guid="guidVariableConverterPackageCmdSet" id="NewRightClickMenuGroup" priority="0x3200">
+			<Parent guid="guidVariableConverterPackageCmdSet" id="CommandNewId"/>
+		</Group>
+    </Groups>
+    <Bitmaps>
+      <Bitmap guid="guidImages" href="Resources\ChineseToEnglishCommand.png" usedList="bmpPic1, bmpPic2, bmpPicSearch, bmpPicX, bmpPicArrows, bmpPicStrikethrough" />
+      <Bitmap guid="guidImages1" href="Resources\ChineseToPinYinCommand.png" usedList="bmpPic1, bmpPic2, bmpPicSearch, bmpPicX, bmpPicArrows, bmpPicStrikethrough" />
+    </Bitmaps>
+    <Buttons>
+      <Button guid="guidVariableConverterPackageCmdSet" id="cmdidChineseToEnglishCommand" priority="0x0100" type="Button">
+        <Parent guid="guidVariableConverterPackageCmdSet" id="NewRightClickMenuGroup" />
+        <Icon guid="guidImages" id="bmpPic1" />
+        <Strings>
+          <ButtonText>英文</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidVariableConverterPackageCmdSet" id="cmdidChineseToPinYinCommand" priority="0x0200" type="Button">
+        <Parent guid="guidVariableConverterPackageCmdSet" id="NewRightClickMenuGroup" />
+        <Icon guid="guidImages1" id="bmpPic1" />
+        <Strings>
+          <ButtonText>拼音</ButtonText>
+        </Strings>
+      </Button>
+    </Buttons>
+  </Commands>
+
+  <Symbols>
+    <GuidSymbol name="VariableConverter" value="{6d1530f7-4267-4d4a-9b9d-ff2c14596044}">
+      
+    </GuidSymbol>
+  
+    <GuidSymbol value="{b7f9edf4-94b5-4d63-9b53-a5f3985007de}" name="guidVariableConverterPackageCmdSet">
+		<IDSymbol name="MyMenuGroup" value="0x1020" />
+		<IDSymbol name="CommandNewId" value="0x3110" />
+		<IDSymbol name="RightClickMenuNewGroup" value="0x3100" />
+		<IDSymbol name="cmdidChineseToPinYinCommand" value="4129" />
+		<IDSymbol name="NewRightClickMenuGroup" value="0x3200" />
+		<IDSymbol value="256" name="cmdidChineseToEnglishCommand" />
+    </GuidSymbol>
+  
+    <GuidSymbol value="{19e11dd6-a2e2-4b17-a860-f556c718063a}" name="guidImages">
+      <IDSymbol name="bmpPic1" value="1" />
+      <IDSymbol name="bmpPic2" value="2" />
+      <IDSymbol name="bmpPicSearch" value="3" />
+      <IDSymbol name="bmpPicX" value="4" />
+      <IDSymbol name="bmpPicArrows" value="5" />
+      <IDSymbol name="bmpPicStrikethrough" value="6" />
+    </GuidSymbol>
+  
+    <GuidSymbol value="{798876d3-e72c-4967-9cef-fe13aa34fb96}" name="guidImages1">
+      <IDSymbol name="bmpPic1" value="1" />
+      <IDSymbol name="bmpPic2" value="2" />
+      <IDSymbol name="bmpPicSearch" value="3" />
+      <IDSymbol name="bmpPicX" value="4" />
+      <IDSymbol name="bmpPicArrows" value="5" />
+      <IDSymbol name="bmpPicStrikethrough" value="6" />
+    </GuidSymbol>
+  </Symbols>
+</CommandTable>
