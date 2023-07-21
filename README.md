@@ -1,6 +1,6 @@
 # VariableConverter
 使用步骤：
-1. 安装插件
+1. [下载](https://github.com/liupade40/VariableConverter/blob/master/%E5%8F%98%E9%87%8F%E8%BD%AC%E6%8D%A2.vsix) 并安装插件
 2. 配置百度翻译APPId-Secret
 3. 方式一：打开VS编辑器选中中文然后右键找到变量转换选择英文即可
 4. 方式二：设置快捷方式(工具---->选项---->环境---->键盘)，设置好快捷方式，选择中文按快捷方式即可
